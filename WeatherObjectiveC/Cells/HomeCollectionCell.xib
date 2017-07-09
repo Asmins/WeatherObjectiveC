@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCollectionViewCell" id="1tC-Ve-VtL" customClass="HomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybx-rk-Fct">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kiev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRT-yw-hz9">
+                                <rect key="frame" x="48.5" y="114" width="53" height="22"/>
+                                <fontDescription key="fontDescription" name="Courier-Oblique" family="Courier" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VRT-yw-hz9" firstAttribute="centerY" secondItem="ybx-rk-Fct" secondAttribute="centerY" id="M0C-WX-mx7"/>
+                            <constraint firstItem="VRT-yw-hz9" firstAttribute="centerX" secondItem="ybx-rk-Fct" secondAttribute="centerX" id="pof-Na-h8m"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ybx-rk-Fct" secondAttribute="bottom" id="Ihy-4v-YdS"/>
+                <constraint firstItem="ybx-rk-Fct" firstAttribute="leading" secondItem="1tC-Ve-VtL" secondAttribute="leading" id="NGV-5w-5Ov"/>
+                <constraint firstItem="ybx-rk-Fct" firstAttribute="top" secondItem="1tC-Ve-VtL" secondAttribute="top" id="Zw8-Os-TiG"/>
+                <constraint firstAttribute="trailing" secondItem="ybx-rk-Fct" secondAttribute="trailing" id="q9h-EF-6nX"/>
+            </constraints>
+            <size key="customSize" width="149" height="235"/>
+            <connections>
+                <outlet property="backGroundView" destination="ybx-rk-Fct" id="Cxn-G8-fcl"/>
+                <outlet property="nameCityLabel" destination="VRT-yw-hz9" id="N7V-XU-8mA"/>
+            </connections>
+            <point key="canvasLocation" x="-62" y="33"/>
+        </collectionViewCell>
+    </objects>
+</document>
